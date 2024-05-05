@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
+@font-face {
+    font-family: 'Myfont';
+    src: url('font.otf') format('woff2'), /* Modern Browsers */
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +21,12 @@ html {
 
 li {
     list-style: none;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 a {
@@ -33,7 +45,6 @@ a {
 .navbar {
     display: flex;
     align-items: center;
-    padding: 1.5rem 1.5rem;
     flex-direction: row;
     align-content: center;
     justify-content: center;
@@ -97,7 +108,14 @@ a {
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        justify-content: space-around;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        align-content: center;
         justify-content: space-around;
     }
 
@@ -130,6 +148,9 @@ a {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .carousel {
+        flex-direction: column;
+    }
 }
 
 .nav-link, .nav-logo {
@@ -137,4 +158,55 @@ a {
 }
 .insta, .face {
     padding: 1em;
+}
+
+.bgimg{
+    /* The image used */
+
+  
+    /* Add the blur effect */
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  
+    /* Full height */
+    height: 100vh;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+.mainTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: red;
+    font-family: "Myfont", sans-serif;
+    font-size: 2em;
+}
+
+ul {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+html, body {margin: 0; height: 100%;}
+
+.imgcar {
+    width: 15em;
+    height: 15em;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+h1 {
+    text-align: center;
 }
