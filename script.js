@@ -1,5 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const cjenikbtn = document.querySelector(".button")
 
 hamburger.addEventListener("click", mobileMenu);
 
@@ -7,6 +8,10 @@ function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 }
+
+cjenikbtn.addEventListener("click", function() {
+    window.location.href = "cjenovnik.html";
+});
 
 
 // when we click on hamburger icon its close 
