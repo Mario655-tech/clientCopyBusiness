@@ -3,7 +3,7 @@
     src: url("font/deafultFont.otf");
 }
 .nav-link.paddingnav {
-    background-color: black;
+    background-color: #4D869C;
     border-radius: 0.2em;
     margin: 0.1em;
 }
@@ -11,6 +11,7 @@
 body {
     background-color: #727272;
 }
+
 
 .navbar-brand.ime {
     font-size: 3em;
@@ -52,4 +53,25 @@ body {
 .table {
     display: flex;
 
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 2em;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
 }
