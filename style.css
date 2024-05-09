@@ -8,6 +8,10 @@
     margin: 0.1em;
 }
 
+body {
+    background-color: #727272;
+}
+
 .navbar-brand.ime {
     font-size: 3em;
 }
@@ -39,4 +43,13 @@
     flex: 0 0 auto; /* Prevent cards from growing */
     margin: 0 10px; /* Adjust spacing between cards */
     width: 18rem; /* Set card width */
+}
+
+.secondTxt {
+    text-align: center;
+}
+
+.table {
+    display: flex;
+
 }
