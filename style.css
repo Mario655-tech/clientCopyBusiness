@@ -34,6 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-overflow-scrolling: touch;
 }
 
 .cards {
@@ -55,6 +56,9 @@ body {
 
 }
 
+
+
+
 @media only screen and (max-width: 481px) {
     body {
         h1 {
@@ -74,4 +78,15 @@ body {
         display: flex;
         justify-content: center;
     }
+
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+
+      .scroll-container {
+        justify-content: flex-start;
+      }
 }
