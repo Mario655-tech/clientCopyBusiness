@@ -77,3 +77,10 @@ function test() {
   //         }
   //     })
   // });
+
+
+const btnMore = document.querySelector("#btnMore")
+
+btnMore.addEventListener("click", function() {
+  window.location.href = "products.html"
+});
